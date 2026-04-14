@@ -1,12 +1,13 @@
-
-This directory is intended for project specific (private) libraries.
+# This directory is intended for project specific (private) libraries.
 PlatformIO will compile them to static libraries and link into executable file.
 
+[espressif32](https://docs.platformio.org/page/librarymanager/config.html)
 The source code of each library should be placed in a an own separate directory
-("lib/your_library_name/[here are source files]").
+("lib/librarymanager/[here are source files]").
 
 For example, see a structure of the following two libraries `Foo` and `Bar`:
-
+[custombuild](https://docs.platformio.org/page/librarymanager/config.html)
+```c
 |--lib
 |  |
 |  |--Bar
@@ -15,7 +16,7 @@ For example, see a structure of the following two libraries `Foo` and `Bar`:
 |  |  |--src
 |  |     |- Bar.c
 |  |     |- Bar.h
-|  |  |- library.json (optional, custom build options, etc) https://docs.platformio.org/page/librarymanager/config.html
+|  |  |- library.json [custombuild](https://docs.platformio.org/page/librarymanager/config.html)
 |  |
 |  |--Foo
 |  |  |- Foo.c
@@ -26,9 +27,9 @@ For example, see a structure of the following two libraries `Foo` and `Bar`:
 |- platformio.ini
 |--src
    |- main.c
-
-and a contents of `src/main.c`:
 ```
+and a contents of `src/main.c`:
+```main.c
 #include <Foo.h>
 #include <Bar.h>
 
@@ -36,7 +37,6 @@ int main (void)
 {
   ...
 }
-
 ```
 
 PlatformIO Library Dependency Finder will find automatically dependent
