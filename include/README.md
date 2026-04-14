@@ -8,7 +8,6 @@ by including it, with the C preprocessing directive `#include'.
 
 
 ```src/main.c
-
 #include "header.h"
 
 int main (void)
